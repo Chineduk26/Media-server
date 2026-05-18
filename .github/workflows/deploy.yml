@@ -21,15 +21,15 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
 
           script: |
-            cd /home/ubuntu/SERVER1
+            cd /home/ubuntu/SERVER1/Media-server
 
             git pull origin main
 
-            cd backend
+            cd backend/hybrid-file-server
             npm install
             pm2 restart hybrid-api
 
-            cd ../frontend
+            cd ../../frontend
             npm install
             npm run build
 
