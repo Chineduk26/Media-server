@@ -1,4 +1,4 @@
-name: Deploy Fullstack_App
+name: Deploy Media Server
 
 on:
   push:
